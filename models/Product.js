@@ -10,12 +10,14 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true
-    },
+
+    // * I had to comment out the id row to make the Create Product pre-written code work
+    // id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    //   primaryKey: true,
+    //   autoIncrement: true
+    // },
     product_name: {
       type: DataTypes.STRING,
       allowNull: false
